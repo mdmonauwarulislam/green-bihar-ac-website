@@ -1,83 +1,123 @@
+import g1 from '../assets/gallery/g1.png';
+import g2 from '../assets/gallery/g2.jpg';
+import g3 from '../assets/gallery/g3.png';
+import g4 from '../assets/gallery/g4.png';
+import g5 from '../assets/gallery/g5.png';
+import g6 from '../assets/gallery/g6.png';
+import g8 from '../assets/gallery/g8.png';
+import g9 from '../assets/gallery/g9.png';
+import g10 from '../assets/gallery/g10.png';
+import g11 from '../assets/gallery/g11.png';
+import g12 from '../assets/gallery/g12.jpg';
+import g13 from '../assets/gallery/g13.jpg';
+import g14 from '../assets/gallery/g14.jpeg';
+import g15 from '../assets/gallery/g15.jpeg';
+
+                                                                                                                                                                                            
+
 const Gallery = ({ onContactClick }) => {
-  // Gallery items with actual images and categories
   const galleryItems = [
-    
-    
     {
-      id: 4,
-      image: 'https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=600&q=80',
+      id: 1,
+      image: g1,
       size: 'normal',
-      category: 'Commercial',
-      title: 'Commercial AC Solutions'
+      category: 'Card',
+      title: 'Visiting Card'
     },
     {
-      id: 5,
-      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80',
+      id: 2,
+      image: g2,
       size: 'wide',
       category: 'Residential',
-      title: 'Home AC Systems'
+      title: 'Home AC Servicing'
     },
     {
-      id: 6,
-      image: 'https://images.unsplash.com/photo-1628744876497-eb30460be9f6?w=600&q=80',
+      id: 3,
+      image: g3,
       size: 'normal',
       category: 'Installation',
       title: 'Modern AC Units'
     },
     {
-      id: 7,
-      image: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&q=80',
-      size: 'large',
-      category: 'Maintenance',
-      title: 'Cleaning & Service'
+      id: 4,
+      image: g4,
+      size: 'normal',
+      category: 'Installation',
+      title: 'AC Installation'
+    },
+    {
+      id: 5,
+      image: g5,
+      size: 'tall',
+      category: 'Residential',
+      title: 'Split AC Setup'
+    },
+    {
+      id: 6,
+      image: g6,
+      size: 'normal',
+      category: 'Advertisement',
+      title: 'Banner Design'
     },
     
-    
+    {
+      id: 8,
+      image: g8,
+      size: 'normal',
+      category: 'Installation',
+      title: 'Office Ac Installation'
+    },
     {
       id: 9,
-      image: 'https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?w=600&q=80',
-      size: 'tall',
+      image: g9,
+      size: 'normal',
+      category: 'Repair',
+      title: 'AC Repair Work'
+    },
+    {
+      id: 10,
+      image: g10,
+      size: 'normal',
       category: 'Commercial',
       title: 'Large Scale Projects'
     },
     {
-      id: 10,
-      image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80',
-      size: 'normal',
-      category: 'Installation',
-      title: 'Split AC Installation'
+      id: 11,
+      image: g11,
+      size: 'wide',
+      category: 'Advertisement',
+      title: 'AC Brands Showcase'
     },
-    
     {
       id: 12,
-      image: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&q=80',
-      size: 'large',
+      image: g12,
+      size: 'normal',
       category: 'Maintenance',
-      title: 'Cleaning & Service'
+      title: 'Regular Service'
     },
     {
-      id: 4,
-      image: 'https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=600&q=80',
+      id: 13,
+      image: g13,
       size: 'normal',
       category: 'Commercial',
-      title: 'Commercial AC Solutions'
+      title: 'Business Solutions'
     },
-    
-    
+    {
+      id: 14,
+      image: g14,
+      size: 'normal',
+      category: 'Installation',
+      title: 'Professional Setup'
+    },
+    {
+      id: 15,
+      image: g15,
+      size: 'normal',
+      category: 'Repair',
+      title: 'Expert Repairs'
+    }
   ];
 
-  const getSizeClass = (size) => {
-    switch(size) {
-      case 'large':
-        return 'md:col-span-2 md:row-span-1';
-      case 'tall':
-        return 'md:row-span-2';
-      case 'wide':
-        return 'md:col-span-2';
-      default:
-        return '';
-    }
-  };
   
   return (
     <section id="gallery" className="py-16 md:py-24 bg-linear-to-br from-gray-50 to-primary-light/20 relative overflow-hidden">
@@ -99,17 +139,17 @@ const Gallery = ({ onContactClick }) => {
           </p>
         </div>
 
-        {/* Masonry Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[250px] gap-4">
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {galleryItems.map((item) => (
             <div
               key={item.id}
-              className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer border-2 border-transparent hover:border-primary ${getSizeClass(item.size)}`}
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer border-2 border-transparent hover:border-primary"
             >
               <img 
                 src={item.image} 
                 alt={item.title}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-auto object-contain transform group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-linear-to-t from-primary-dark via-primary-dark/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
