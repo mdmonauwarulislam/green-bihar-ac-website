@@ -1,16 +1,48 @@
-# React + Vite
+# Green Bihar Air Conditioning
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for Green Bihar Air Conditioning - professional AC sales, installation, repair, and maintenance services in Bihar.
 
-Currently, two official plugins are available:
+🌐 **Live Website**: [https://greenbiharairconditioning.in/](https://greenbiharairconditioning.in/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About the Project
 
-## React Compiler
+Green Bihar Air Conditioning is a full-service air conditioning company based in Bihar, offering comprehensive AC solutions including sales, installation, repair, and maintenance services. This website serves as their digital presence, showcasing their services, completed projects, and providing easy ways for customers to get in touch.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend:**
+- React 18 with Vite
+- Tailwind CSS v4
+- Lucide React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend:**
+- Node.js & Express
+- Nodemailer for email service
+
+## Key Features
+
+- 📱 Fully responsive design across all devices
+- 🎨 Modern UI with smooth animations
+- 🔍 SEO optimized with meta tags and structured data
+- 📧 Contact form with email integration
+- 💬 WhatsApp integration for instant communication
+- 🖼️ Interactive project gallery
+- 🌟 Service showcase with detailed information
+
+## Services Offered
+
+- AC Sales & Services
+- AC Installation & Maintenance
+- AC Repair Services
+- Used AC Buying & Selling
+
+## Contact Information
+
+- **Phone**: +91 7977359210
+- **Email**: gbairconditioning24@gmail.com
+- **Website**: [https://greenbiharairconditioning.in/](https://greenbiharairconditioning.in/)
+- **WhatsApp**: [+91 7977359210](https://wa.me/917977359210)
+
+---
+
+© 2025 Green Bihar Air Conditioning. All rights reserved.
